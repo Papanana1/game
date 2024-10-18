@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://boa01rc8qaoj3"]
+
+[ext_resource type="ArrayMesh" uid="uid://bq5chkc7hkm77" path="res://Shopping_Cart_v1_L1.123c67bbc848-b9e3-4edb-aab4-7c4475e3d08c/18534_Shopping_Cart_v1.obj" id="1_c6mj6"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b37ny"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="18534ShoppingCartV1" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.999997, -1.16725e-10, 0.00267035, -0.00267035, -4.37112e-08, 0.999997, -1.73618e-18, -1, -4.37114e-08, -50.1752, 39.4471, -1.16631)
+material_override = SubResource("StandardMaterial3D_b37ny")
+mesh = ExtResource("1_c6mj6")
