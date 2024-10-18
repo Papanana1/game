@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://drfhpgyd2hegk"]
+
+[ext_resource type="Script" path="res://cart_car.gd" id="1_48jom"]
+[ext_resource type="ArrayMesh" uid="uid://mqvnhg32exgx" path="res://18534_Shopping_Cart_v1.obj" id="2_e7bux"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_t5von"]
+size = Vector3(1, 1, 24.0721)
+
+[node name="cart_car" type="CharacterBody3D"]
+script = ExtResource("1_48jom")
+
+[node name="18534ShoppingCartV1" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 5.62594, -1.17647, -14.4535)
+mesh = ExtResource("2_e7bux")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(50, 0, 0, 0, 100, 0, 0, 0, 3, -0.885895, 49.0386, -12.8287)
+shape = SubResource("BoxShape3D_t5von")
