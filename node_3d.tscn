@@ -1,12 +1,26 @@
-[gd_scene load_steps=3 format=3 uid="uid://boa01rc8qaoj3"]
+[gd_scene load_steps=5 format=3 uid="uid://boa01rc8qaoj3"]
 
 [ext_resource type="ArrayMesh" uid="uid://bq5chkc7hkm77" path="res://Shopping_Cart_v1_L1.123c67bbc848-b9e3-4edb-aab4-7c4475e3d08c/18534_Shopping_Cart_v1.obj" id="1_c6mj6"]
+[ext_resource type="MultiMesh" uid="uid://ctqsqi3b3ap7r" path="res://Camellia City/DAE/Camellia City/88.tres" id="2_cf3qf"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b37ny"]
+albedo_color = Color(0.272047, 0.272047, 0.272047, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_06jun"]
 
 [node name="Node3D" type="Node3D"]
 
 [node name="18534ShoppingCartV1" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.999997, -1.16725e-10, 0.00267035, -0.00267035, -4.37112e-08, 0.999997, -1.73618e-18, -1, -4.37114e-08, -50.1752, 39.4471, -1.16631)
+transform = Transform3D(0.984177, -0.177171, 0.0026281, -0.00267035, -4.37112e-08, 0.999997, -0.17717, -0.98418, -0.000473151, -80.393, 33.2046, 33.9021)
 material_override = SubResource("StandardMaterial3D_b37ny")
 mesh = ExtResource("1_c6mj6")
+
+[node name="Node3D" type="Node3D" parent="."]
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="MultiMeshInstance3D" type="MultiMeshInstance3D" parent="."]
+material_override = SubResource("StandardMaterial3D_06jun")
+
+[node name="MultiMeshInstance3D2" type="MultiMeshInstance3D" parent="."]
+multimesh = ExtResource("2_cf3qf")

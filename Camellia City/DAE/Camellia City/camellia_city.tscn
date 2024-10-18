@@ -1,0 +1,40 @@
+[gd_scene load_steps=12 format=3 uid="uid://cf34ntt4sqbfu"]
+
+[ext_resource type="PackedScene" uid="uid://c4eqpg7kf1sga" path="res://Camellia City/FBX/Camellia City.fbx" id="1_gnm63"]
+[ext_resource type="Texture2D" uid="uid://cr1bkp346e3hk" path="res://Camellia City/OBJ/Camellia City/One_Franklin_Square_01.jpg" id="2_qn1xq"]
+[ext_resource type="Texture2D" uid="uid://by3mdvhpms3vt" path="res://Camellia City/3DS/_1.jpg" id="2_ypwdm"]
+[ext_resource type="Texture2D" uid="uid://ccf4bpxfty8o2" path="res://Camellia City/3DS/_17.jpg" id="3_gg0m7"]
+[ext_resource type="Texture2D" uid="uid://b653tsdhjru0" path="res://Camellia City/OBJ/Camellia City/One_Franklin_Square_16.jpg" id="3_ixanb"]
+[ext_resource type="Texture2D" uid="uid://lsc3x0usjlec" path="res://Camellia City/3DS/One_Fr05.jpg" id="4_e03yi"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tbk77"]
+albedo_texture = ExtResource("2_ypwdm")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p2nrt"]
+albedo_texture = ExtResource("3_gg0m7")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ioe2q"]
+albedo_texture = ExtResource("2_qn1xq")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nosip"]
+albedo_texture = ExtResource("3_ixanb")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oelks"]
+albedo_texture = ExtResource("4_e03yi")
+
+[node name="Camellia City" instance=ExtResource("1_gnm63")]
+
+[node name="Mesh1" parent="Model/Wharf_Ground_Base1" index="0"]
+material_override = SubResource("StandardMaterial3D_tbk77")
+
+[node name="Mesh3" parent="Model/Camellia_City_Promenade1" index="1"]
+material_override = SubResource("StandardMaterial3D_p2nrt")
+
+[node name="Mesh10" parent="Model/University_Place1" index="3"]
+material_override = SubResource("StandardMaterial3D_ioe2q")
+
+[node name="Mesh16" parent="Model/Camellia_City_Financial_Center1" index="1"]
+material_override = SubResource("StandardMaterial3D_nosip")
+
+[node name="Mesh17" parent="Model/Camellia_City_Center1" index="0"]
+material_override = SubResource("StandardMaterial3D_oelks")
